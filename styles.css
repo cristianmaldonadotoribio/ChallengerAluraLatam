@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    
+    background-color: #E5E5E5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.content__title{
+    width: 15%;
+    height: 700px;
+    height: calc(100vh - 60px);
+}
+.content__encriptador{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 65%;
+    height: calc(100vh - 60px);
+    padding: 20px 80px 20px 40px; 
+}
+
+.content__encriptador__textarea{
+    width: 100%;
+    height: 85%;
+    border: none;
+    resize: none; 
+    font-size: 32px;
+    background: none;
+    padding: 20px;
+    color: #0A3871;
+    font-weight: 400;
+}
+.content__encriptador__textarea::placeholder{
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+}
+.content__encriptador__textarea:focus{
+    border: none;
+    outline: none;   
+}
+.content__encriptador__info{
+    display: flex;
+    height: 5%;
+    align-items: center;
+    gap: 7px;
+}
+.info{
+    font-size: 12px;
+}
+.content__result{
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    width: 30%;
+    height: calc(100vh - 60px);
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    gap: 10px;
+}
+.content__result__textarea{
+    width: 100%;
+    height: 90%;
+    border: none;
+    resize: none; 
+    font-size: 24px;
+    padding: 15px
+}
+.content__result__textarea:focus{
+    border: none;
+    outline: none;   
+}
+
+.content__encriptador__botones{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    gap: 20px;
+}
+.content__encriptador__botones__boton{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #0A3871;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.content__result__imagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 30%;
+    height: calc(100vh - 60px);
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    gap: 10px;
+}
+.content__result__imagen__img{
+    width: 90%;
+}
+.content__result__imagen__mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 150px;
+    text-align: center;
+    color: #343A40;
+}
+.azul{
+    color: white;
+    background-color: #0A3871;
+}
+.azulclaro{
+    color: #0A3871;
+    background-color: #0a38711f;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .content__title{
+        width: 100%;
+        height: 10%;
+    }
+    .content__encriptador{
+        width: 100%;
+        height: 65%;
+        padding: 20px 40px 20px 20px; 
+    }
+    .content__encriptador__textarea{
+        height: 83%;
+        font-size: 24px;
+        padding: 15px;
+    }
+    .content__encriptador__info{
+        height: 7%;
+    }
+    .content__encriptador__botones{
+        height: 40px;
+    }
+    .content__result{
+        width: 100%;
+        height: 25%;
+    }
+    .content__result__imagen{
+        width: 100%;
+        height: 25%;
+    }
+    .content__result__imagen__img{
+        display: none;
+    }
+    .content__result__textarea{
+        height: 70%;
+    }
+}
+@media screen and (max-width: 425px){
+    body{
+        padding: 15px;
+    }
+    .content__encriptador{
+        width: 100%;
+        height: 65%;
+        padding: 0px 0px 15px 0px; 
+    }
+    .content__encriptador__textarea{
+        height: 63%;
+        padding: 10px;
+        font-size: 18px;
+    }
+    .content__encriptador__textarea::placeholder{
+        font-size: 18px;
+    }
+    .content__encriptador__info{
+        height: 7%;
+    }
+    .content__encriptador__botones{
+        height: 30%;
+        gap: 10px;
+    }
+    .content__encriptador__textarea{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .content__result__textarea{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .content__result__imagen__mensaje{
+        height: 100px;
+    }
+    .content__encriptador__botones{
+        flex-direction: column;
+    }
+    
+}

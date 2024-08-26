@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="content__title">
+        <img src="imagenes/logo.svg" alt="">
+    </section>
+    <section class="content__encriptador">
+        <textarea class="content__encriptador__textarea" name="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+        <div class="content__encriptador__info">
+            <img src="imagenes/circle_exclamation.svg" alt="">
+            <span class="info">Apenas letras minúsculas e sem acento.</span>
+        </div>
+        <div class="content__encriptador__botones">
+            <button class="content__encriptador__botones__boton azul" id="encriptar" onclick="encriptar()">Encriptar</button>
+            <button class="content__encriptador__botones__boton azulclaro" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+    </section>
+    <section class="content__result" id="content__result">
+        <textarea class="content__result__textarea" name="resultado" id="resultado" cols="30" rows="10" placeholder="Resultado"></textarea>
+        <div class="content__encriptador__botones">
+            <button class="content__encriptador__botones__boton" id="copiar" onclick="copiar()">Copiar</button>
+        </div>
+    </section>
+    <section class="content__result__imagen" id="content__result__imagen">
+        <img class="content__result__imagen__img" src="imagenes/muñeco.svg" alt="">
+        <div class="content__result__imagen__mensaje">
+            <h1>Ningún mensaje fue encontrado</h1>
+            <h5>Ingresa el texto que desees encriptar o desencriptar.</h5>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
